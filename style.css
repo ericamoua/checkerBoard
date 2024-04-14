@@ -1,0 +1,22 @@
+
+  .checker-box {
+    display: grid;
+    grid-template-columns: repeat(8, 100px); 
+    grid-template-rows: repeat(8, 100px); 
+    border: solid 1px;
+    width: 800px
+  }
+  
+  .check-box div {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .black-box:nth-child(even){
+    background-color: black;
+  }
+
+  .white-box:nth-child(odd){
+    background-color: black;
+  }
+  
