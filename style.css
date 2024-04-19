@@ -26,6 +26,7 @@
   @media (max-width: 375px) {
     .checker-box {
       width:400px;
+      height: 400px;
       grid-template-columns: repeat(8, 50px); 
       grid-template-rows: repeat(8, 50px);
     }
