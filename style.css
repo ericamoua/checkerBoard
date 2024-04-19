@@ -1,22 +1,32 @@
+/* Use grid to create 8 columns and 8 rows that are 100px */
 
   .checker-box {
     display: grid;
-    grid-template-columns: repeat(8, 100px); 
+    grid-template-columns: repeat(8, 100px);
     grid-template-rows: repeat(8, 100px); 
     border: solid 1px;
-    width: 800px
-  }
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+  } 
+
   
-  .check-box div {
-    width: 100px;
-    height: 100px;
-  }
-  
+  /* nth-child selecting the even numbers of elements */
   .black-box:nth-child(even){
     background-color: black;
   }
 
+  /* nth-child selecting the odd numbers of the elemnts */
   .white-box:nth-child(odd){
     background-color: black;
   }
   
+/* if i dont want it any bigger but the small size in max-width */
+  @media (max-width: 375px) {
+    .checker-box {
+      width:400px;
+      grid-template-columns: repeat(8, 50px); 
+      grid-template-rows: repeat(8, 50px);
+    }
+}
